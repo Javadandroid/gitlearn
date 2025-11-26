@@ -10,7 +10,9 @@
 
 **.gitignore file:** untracked files can be set in this file
 
-**git add `<filename>`:** add file for stage level for adding all file use "." 
+**git add `<filename>`:** add file for stage level for adding all files use "." 
+
+**git restore --staged `<filename>`:** remove file from stage level for removing all files use "." 
 
 **git commit:** make a snapshot for all staged files
 >for better message we can use :
@@ -36,5 +38,10 @@
 >you can use partial of HASH
 ---
  
-**git checkout `<branchName>`:** 
+**git checkout `<branchName>`:** for switching between branches and last commit of that branch
 
+**git switch `<branchName>`:** for switching between branches safer than checkout and newer
+
+
+git switch --detach
+git switch -c saved-feature
