@@ -1,5 +1,5 @@
 def main():
-    print("Hello from gitlearn!")
+    print("Hello from Hello AfterDetach!")
 
 
 if __name__ == "__main__":
