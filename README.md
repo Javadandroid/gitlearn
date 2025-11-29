@@ -72,11 +72,14 @@
 
 >- **--soft** this flag delete commit message and files go in staged level.
 >- **--mixed** this flag delete commit message and files go in unstaged level.
->- **--hard** delete commit and changes, in default without flag use git use this.
+>- **--hard** delete commit and changes
 
 Reset Mode | Command Example | Commit History | Staging Area (Index) | Working Directory (Files) | Use Case |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Soft** 🟢 | `git reset --soft HEAD~1` | **Removed** ❌<br>(Moves HEAD back) | **Staged** 🟢<br>(Files remain added) | **Preserved** ✅<br>(Changes are safe) | When you want to fix the commit message or combine commits. |
 | **Mixed** 🟠 | `git reset --mixed HEAD~1`<br>*(Default)* | **Removed** ❌<br>(Moves HEAD back) | **Unstaged** 🔴<br>(Files are modified) | **Preserved** ✅<br>(Changes are safe) | When you want to keep your work but unstage the files. |
 | **Hard** 🔴 | `git reset --hard HEAD~1` | **Removed** ❌<br>(Moves HEAD back) | **Cleared** 💨<br>(Reset to match HEAD) | **Discarded** ❌<br>(All changes are **LOST**) | When the last commit was a total mistake and you want to destroy it. |
+
+**git reflog:** show all history of git move and reset, like a security camera🎥
+>we can use commit hash for move to commits by ***reset*** command
 
