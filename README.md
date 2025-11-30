@@ -83,3 +83,16 @@ Reset Mode | Command Example | Commit History | Staging Area (Index) | Working D
 **git reflog:** show all history of git move and reset, like a security camera🎥
 >we can use commit hash for move to commits by ***reset*** command
 
+**git stash** save all changed files in temporary storage
+> stash levels is like an array:\
+>-stash@{0}\
+>-stash@{1}\
+>-stash@{2}\
+>-stash@{3}
+
+**git stash pop:** restore all changes from stash to our code
+![pop in stash](image.jpg)
+
+
+# Git Work Flow
+

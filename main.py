@@ -1,6 +1,6 @@
 def main():
     print("Hello from Hello AfterDetach!")
 
-# after stash
+# Work in progress
 if __name__ == "__main__":
     main()
